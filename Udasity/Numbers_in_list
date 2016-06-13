@@ -1,0 +1,8 @@
+def numbers_in_lists(string):
+    nom = []
+    prom = []
+    fin = []
+    i = 0
+    while i < len(string):
+	    i+=1
+
