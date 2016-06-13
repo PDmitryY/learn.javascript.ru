@@ -4,6 +4,6 @@ def numbers_in_lists(string):
     fin = []
     i = 0
     while i < len(string):
-        nom[i] = int(string[i])
-	i+=1
+        nom.append(int(string[i]))
+        i+=1
 
