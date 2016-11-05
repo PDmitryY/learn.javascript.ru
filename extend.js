@@ -1,19 +1,19 @@
 class Input {
  getValue() {
-     return getById("1").value;
- }  
+     return getElementById("1").value;
+ }; 
 
   render () {
-
-    document.body.appendChild(<input id="1">);
-  }
+    document.body.appendChild('innerHTML id="1"');
+  };
 };
-
 
 class Input2 extends Input{
 	getValue() {
-    var val = getById("1").value;
-  if(_.isNUmber(val)) reuturn val;
+    var val = super.getValue();
+  if(_.isNUmber(val)) return val;
   else return 0;
  };
-}
+ render () {
+    super.render();
+  };
