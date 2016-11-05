@@ -17,3 +17,4 @@ class Input2 extends Input{
  render () {
     super.render();
   };
+}
