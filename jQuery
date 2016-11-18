@@ -1,0 +1,17 @@
+(function ($){
+$(document).ready(
+    function () {
+        $('body').append('<div>GHB</div>');
+        $('div').addClass('main');
+        $('.main').html('<ul></ul>');
+        for(let i=0; i<10; i++){
+            $('.main ul').append('<li>Пункт' + (i+1) + '</li>');
+        };
+  /*      for(let i=0; i<10; i++){
+            $('.main ul li').eq(i).text('Пункт' + (i+1));
+        }*/
+        /*$('.main ul li').each(function(){
+            $(this).text('Пункт ' + ($(this).index()+1));
+        })*/
+    });
+})(jQuery);
